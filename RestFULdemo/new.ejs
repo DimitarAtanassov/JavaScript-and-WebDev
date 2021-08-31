@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Comment</title>
+</head>
+<!-- The for in the label must be associated w/ the id if the input you are trying to match it too -->
+<!-- The name will be what the data will be sent under when the post request is sent (in the query string) -->
+<!-- So your username data will be saved under the username and the comment data will be saved under comment in your qury string -->
+
+<body>
+    <h1>Make a new Comment</h1>
+    <!-- This is sending our  data to our post route which is /comments and has a method of post -->
+    <form action="/comments" method="post">
+        <section>
+            <label for="username">Enter Username</label>
+            <input type="text" placeholder="username" name='username' id='username'>
+        </section>
+        <section>
+            <label for="comment">Comment Text</label>
+            <br>
+            <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+        </section>
+        <button>Submit</button>
+    </form>
+    <a href="/comments">Back to Index</a>
+</body>
+
+</html>

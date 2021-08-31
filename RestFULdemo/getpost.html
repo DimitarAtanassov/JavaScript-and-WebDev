@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get and Post</title>
+</head>
+
+<body>
+    <h1>Get and Post requests</h1>
+    <h2>Get</h2>
+    <!-- This is our get example -->
+    <!-- The action is where the form is going to go when submitted -->
+    <!-- In this case the form is going to our /tacos on the port 3000 -->
+    <form action="http://localhost:3000/tacos" method="get">
+        <input type="text" name='meat'>
+        <input type="number" name='qty'>
+        <button>Submit</button>
+    </form>
+    <!-- This is the url we get from out submitted form file:///C:/tacos?meat=carnitas&qty=3 -->
+    <!-- This is our post example -->
+    <h2>Post</h2>
+    <form action="http://localhost:3000/tacos" method="post">
+        <input type="text" name='meat'>
+        <input type="number" name='qty'>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
