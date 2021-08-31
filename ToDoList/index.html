@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Todo List JS</title>
+</head>
+
+<body>
+    <div class="gradient-border" id="box">
+        <h1>TO-DO LIST</h1>
+    </div>
+    <!-- action: When the submit button is hit go to this page      method:We are posting tasks and we are not getting any information -->
+    <form action="index.html" method="POST">
+        <input type="text" placeholder="add task" id="task">
+        <button id='submit'>Submit</button>
+    </form>
+
+    <div class="taskBoard">
+        <!-- This is where the items of the list will be added -->
+        <ul id="taskList">
+        </ul>
+    </div>
+    <button id="remove">Remove Todo(s)
+    </button>
+    <script src="app.js"></script>
+</body>
+
+</html>
