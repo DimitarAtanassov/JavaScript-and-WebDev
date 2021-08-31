@@ -1,0 +1,300 @@
+.navbar{
+    /* Makes info boxes same color as this */
+    background-color: #ff5883;
+    padding-left: 0;
+    padding-right: 0;
+    font-family: 'Bebas Neue', cursive;
+}
+.navbar-brand {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+  }
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+}
+
+body{
+    background-color: #4cc9f0;
+    background-image: url(liamcloud.png);
+    background-repeat:repeat;
+    background-size: 250px 250px;
+    overflow: hidden;
+    position: relative;
+    animation:clouds_anim 250s linear infinite;
+    text-decoration: none;
+}
+@keyframes clouds_anim{
+    0%{background-position:0 0;}
+    100%{background-position: -21122px 0;}
+}
+html{
+    padding:0;
+    margin:0;
+}
+li{
+    list-style: none;
+    text-align: center;
+}
+.maincontent{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    padding-top: 1em;
+}
+/* Start of community card */
+.card-community{
+    display:grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    border-radius:18px;
+    background: #ff5883;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: 'Bebas Neue', cursive;
+    justify-content: center;
+    margin-top: 2em;
+    transition: 0.5s ease;
+    cursor: pointer;    
+    
+}
+
+footer{
+    font-family: 'Shadows Into Light', cursive;
+    align-items: baseline;
+    margin-bottom: auto;
+    margin-top: 100px;
+    font-size: 25px;
+}
+.card-watchme footer{
+    margin-top: 80px;
+}
+
+h2{
+    padding-top: 5px;
+    font-family: 'Bebas Neue', cursive;
+    border-bottom: black solid;
+}
+
+/* This is for the inside of the  the communications card */
+.containercom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    text-decoration: none;
+    margin-right: 25px;
+
+}
+
+/* End of community Card */
+
+/* Start of socials card */
+.card-socials{
+    display:grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    border-radius:18px;
+    background: #ff5883;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: 'Bebas Neue', cursive;
+    justify-content: flex-start;
+    margin-top: 2em;
+
+
+}
+
+/* This is for the inside of the socials card */
+.containersocials{
+    margin-top: 50px;
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 30px;
+    margin-right: 50px;
+
+
+}
+.card-socials footer{
+    margin-top: 20px;
+}
+
+
+/* Start of watchme card */
+.card-watchme{
+    display:grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    border-radius:18px;
+    background: #ff5883;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: 'Bebas Neue', cursive;
+    justify-content: flex-end;
+    margin-top: 2em;
+}
+
+
+.containerwatchme{
+    font-size: 30px;
+    margin-top: 40px;
+    margin-right: 50px;
+}
+
+.containercom button{
+    background: none;
+    background-color: cornflowerblue;
+    color:black;
+    border:5px solid;
+    border-radius: 15px;
+    /* Padding adds space between the content area and content box */
+    padding: 1em 2em;
+    /* This adds top and bottom padding of 1em and left and right padding of 2 em */
+    font-size: 20px;
+    transition: color 0.25s,border-color 0.25s, box-shadow 0.25s,transform 0.25s;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.containercom button:hover{
+    border-color: #a0c4ff;
+    /* Changes text color */
+    color:white;
+    box-shadow: 0 0.5em 0.5em -0.4em #72efdd;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
+.instab button{
+    background: none;
+    background-color: #ffaa00;
+    color:black;
+    border:5px solid;
+    border-radius: 15px;
+    /* Padding adds space between the content area and content box */
+    padding: 1em 1.5em;
+    /* This adds top and bottom padding of 1em and left and right padding of 2 em */
+    font-size: 20px;
+    transition: color 0.25s,border-color 0.25s, box-shadow 0.25s,transform 0.25s;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 1em;
+}
+
+.instab button:hover{
+    border-color: #ff7b00;
+    /* Changes text color */
+    color:white;
+    box-shadow: 0 0.5em 0.5em -0.4em #72efdd;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+.twitb button{
+    background: none;
+    background-color: #0096c7;
+    color:black;
+    border:5px solid;
+    border-radius: 15px;
+    /* Padding adds space between the content area and content box */
+    padding: 1em 1.5em;
+    /* This adds top and bottom padding of 1em and left and right padding of 2 em */
+    font-size: 20px;
+    transition: color 0.25s,border-color 0.25s, box-shadow 0.25s,transform 0.25s;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 1em;
+}
+
+.twitb button:hover{
+    border-color: #0077b6;
+    /* Changes text color */
+    color:white;
+    box-shadow: 0 0.5em 0.5em -0.4em #72efdd;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
+.tb button{
+    background: none;
+    background-color: #c77dff;
+    color:black;
+    border:5px solid;
+    border-radius: 15px;
+    /* Padding adds space between the content area and content box */
+    padding: 1em 1.5em;
+    /* This adds top and bottom padding of 1em and left and right padding of 2 em */
+    margin-bottom: 1em;
+    font-size: 20px;
+    transition: color 0.25s,border-color 0.25s, box-shadow 0.25s,transform 0.25s;
+    font-family: 'Bebas Neue', cursive;
+}
+.tb button:hover{
+    border-color: #ecbcfd;
+    /* Changes text color */
+    color:white;
+    box-shadow: 0 0.5em 0.5em -0.4em #72efdd;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
+.yt button{
+    background: none;
+    background-color: #f44852;
+    color:black;
+    border:5px solid;
+    border-radius: 15px;
+    /* Padding adds space between the content area and content box */
+    padding: 1em 1.5em;
+    /* This adds top and bottom padding of 1em and left and right padding of 2 em */
+    margin-bottom: 1em;
+    font-size: 20px;
+    transition: color 0.25s,border-color 0.25s, box-shadow 0.25s,transform 0.25s;
+    font-family: 'Bebas Neue', cursive;
+}
+.yt button:hover{
+    border-color: #d60513;
+    /* Changes text color */
+    color:white;
+    box-shadow: 0 0.5em 0.5em -0.4em #72efdd;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+.tikb button{
+    background: none;
+    background-color: #f44852;
+    color:black;
+    border:5px solid;
+    border-radius: 15px;
+    /* Padding adds space between the content area and content box */
+    padding: 1em 1.5em;
+    /* This adds top and bottom padding of 1em and left and right padding of 2 em */
+    margin-bottom: 1em;
+    font-size: 20px;
+    transition: color 0.25s,border-color 0.25s, box-shadow 0.25s,transform 0.25s;
+    font-family: 'Bebas Neue', cursive;
+}
+.tikb button:hover{
+    border-color: #d60513;
+    /* Changes text color */
+    color:white;
+    box-shadow: 0 0.5em 0.5em -0.4em #72efdd;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+.navbar-nav:hover{
+    color:purple;
+}
+
+/* For the clouds makes rows and shuffle around so they arent all aligned0 */
+/* Make img class for clouds to add lobster cursive from google fonts, want it skinny */
+/* No cloud animation panel rotation */
+/* Smooth rotation on panels every 3-4 seconds */
+
+/* Instagram icon make it a link, instagram social next to icon make it a link */
+/* Twitter icon and snapchat same thing */
+/* Interval carosuel on cards */
+/* Twitch type style on bot of webpage */
+
+
+/* #27 Gooey Menu */
